@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>MDA DisForwarder</title>
+    <meta name="description" content="Look at all those webhooks that we made!" />
+    <meta name="language" content="English" />
+    <link href="https://mdapublishers.web.app/icons/terminal_mini.png" rel="icon">
+    <meta property="og:image" content="https://mdapublishers.web.app/icons/terminal_mini.png" />
+    <link href="./style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h1>MDA Webhooks/DisForwarders</h1>
+<p>Programmed by Mr Discord Animation</p>
+<hr>
+<p>When creating your webhook you accept Discord Terms of Service.</p>
+<form action="./webhooks.html" method="post">
+<label for="web"><p>Insert your Link to your Discord Webhook below:</p></label>
+<input type="url" name="webhook" id="web" placeholder="Link to Webhook." required>
+<input type="text" name="typo" hidden value="create" required>
+<input type="text" name="id" hidden id="gen_id" required>
+<input type="text" name="token" hidden id="gen_token" required>
+<button type="submit">Create!</button>
+</form>
+<hr>
+<p>Need of Deleting your Webhook? Paste yours/or a spammer/scammer down below! And we'll take it from here!</p>
+<form action="./webhooks.html" method="post">
+<label for="webd"><p>Insert your Link to your DisForwarder Webhook below:</p></label>
+<input type="url" name="webhook" id="webd" placeholder="Link to Webhook.">
+<input type="text" name="typo" hidden value="delete" required>
+<button type="submit">Delete!</button>
+</form>
+<hr>
+<script>
+(function(){
+    function genID(captcha_str,fin){
+    captcha_str="1234567890-";
+    fin=Math.floor(Math.random()*captcha_str.length);
+    for(let i=0; i<9; i++){
+        fin+=captcha_str[Math.floor(Math.random()* 8)];
+    }
+    //console.log(captcha_str.length);
+    console.log("Generated Webhook ID: "+fin)
+    return fin;
+    }
+    function genTOKEN(captcha_str,fin){
+    captcha_str="ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
+    fin=Math.floor(Math.random()*captcha_str.length);
+    for(let i=0; i<9; i++){
+        fin+=captcha_str[Math.floor(Math.random()* 8)];
+    }
+    //console.log(captcha_str.length);
+    console.log("Generated Webhook Token: "+fin)
+    return fin;
+    }
+    document.getElementById("gen_id").value=genID();
+    document.getElementById("gen_token").value=genTOKEN();
+}())
+</script>
+<center><a href="https://discord.com/invite/HxZzesDCbN" rel="noopener" class="black" target="_blank">Join our Discord Server?</a></center>
+</body>
+</html> 

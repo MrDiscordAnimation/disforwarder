@@ -1,0 +1,177 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+}
+a.black:hover{
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+a.black{
+  color: black;
+  cursor: pointer;
+}
+
+a.yellow:hover{
+  background: yellow;
+  color: white;
+  cursor: pointer;
+}
+a.yellow{
+  color: yellow;
+  cursor: pointer;
+}
+
+a.red:hover{
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+a.red{
+  color: red;
+  cursor: pointer;
+}
+
+a.green:hover{
+  background: green;
+  color: white;
+  cursor: pointer;
+}
+a.green{
+  color: green;
+  cursor: pointer;
+}
+
+a.cyan:hover{
+  background: cyan;
+  color: white;
+  cursor: pointer;
+}
+a.cyan{
+  color: cyan;
+  cursor: pointer;
+}
+
+a.warning:hover{
+  background: black;
+  color: yellow;
+  cursor: pointer;
+}
+a.warning{
+  color: black;
+  cursor: pointer;
+}
+
+a.danger:hover{
+  background: red;
+  color: white;
+  cursor: pointer;
+}
+a.danger{
+  color: black;
+  cursor: pointer;
+}
+/*Shows word in Mono*/
+.mono {
+  font-family: consolas;
+}
+/*Shows word as Bold*/
+.bold {
+  font-weight: bold;
+}
+/*Microsoft Default Font and Microsoft Other Buttons*/
+.ms {
+  font-family: mwf-segoe,Segoe UI,Segoe,sans-serif;
+  /*color: #333;
+  background-color: #fff;*/
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+}
+.ms-normal {
+  font-family: mwf-segoe,Segoe UI,Segoe,sans-serif;
+  color: #333;
+  background-color: #fff;
+  line-height: normal;
+  -webkit-font-smoothing: antialiased;
+}
+.ms-btn {
+  font-size: 1em;
+  cursor: pointer;
+  /*Do not remove Comment*/
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  position: relative;
+  outline: none;
+  border: none;
+  white-space: nowrap;
+  font-size: inherit;
+  font-family: segoe-vf,sans-serif;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-overflow: ellipsis;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  padding: 0 1.5em .1em;
+  border-radius: .33em;
+  min-width: 8em;
+  min-height: 2.25em;
+  cursor: pointer;
+  background-color: var(--theme-button-bg);
+  color: var(--theme-button-fg);
+  box-shadow: 0 0.7565932872px 2px rgb(0 0 0 / 15%);
+  transition: background-color .4s cubic-bezier(.165,.84,.44,1) 0ms,color .4s cubic-bezier(.165,.84,.44,1) 0ms,box-shadow .4s cubic-bezier(.165,.84,.44,1) 0ms;
+  line-height: 1.1;
+}
+.ms-btn:hover {
+  text-decoration: none;
+}
+.pointer {
+  cursor: pointer;
+}
+
+/*For Open and Close Boxes*/
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  padding: 0.5em 0.5em 0;
+}
+
+summary {
+  font-weight: bold;
+  margin: -0.5em -0.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: 0.5em;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: 0.5em;
+}
+
+/*
+Selection Color Change for .selection_highlight
+*/
+
+.selection_highlight::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: green;
+}
+
+.selection_highlight::selection {
+  color: white;
+  background: green;
+}
