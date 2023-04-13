@@ -28,6 +28,9 @@ To Send Messages Copy your Link it should look something like this: ``https://ap
   "avatar_url": "https://mdapublishers.web.app/icons/terminal_mini.png"
 }
 ```
+
+Basically your old JavaScript Code or anything that can post your Discord Webhook can post the DisForwarder Webhook it's like adding cheese to the pizza giving it more flavours.
+
 Note: If you received a **400** Error it might be that:
 
 - The Content/Message is too long surpassed the limit.
