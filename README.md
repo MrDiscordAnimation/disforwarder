@@ -6,7 +6,7 @@ You can clone the source code here on this Github. Github URL: https://github.co
 
 So what does it do? Well it's does the same thing like every other Discord Webhook. Sending Messages!
 
-This disforwarder is limited to only sending messages, changing the avatar of the embed and nickname, so basically it can't send embeds or send attachments.
+This disforwarder is limited to only sending messages, changing the avatar of the webhook and nickname, so basically it can't send embeds or send attachments.
 
 ### Creating a DisForwarder Webhook
 
