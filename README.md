@@ -10,7 +10,7 @@ This disforwarder is limited to only sending messages, changing the avatar of th
 
 ### Creating a DisForwarder Webhook
 
-To Create the DisForwarder Webhook Download this Github and host everything yourself or go to the prebuilt one: https://api.mrdiscord.repl.co/webhooks.html
+To Create the DisForwarder Webhook Download this Github and host everything yourself or go to the prebuilt one: https://api.mrdiscord.repl.co/webhooks.html (Dead website) or navigate to your local hosted site at 127.0.0.1:3000 or localhost:3000
 
 Then Copy your Discord Webhook and find the section where it's says creating your webhook and paste it into the `Link to Webhook` and Click on `Create!` button.
 
@@ -45,8 +45,34 @@ Locate the Delete section it should be at the bottom and paste your DisForwarder
 
 It should redirect you to another page where it's says that it deleted the DisForwarder Webhook!
 
+### Installation & Starting the local website/server
+
+To Install just click on **Code** and click on **Download ZIP** (Github)
+
+Or Clone via GIT with this command: ``git clone https://github.com/MrDiscordAnimation/disforwarder.git``
+
+To Install this project required dependencies on your computer or server simply run the following:
+
+``npm install``
+
+or if you want a clean install of the packages required for this project (If you have already downloaded the packages):
+
+``npm un``
+
+and then run:
+
+``npm i axios cors dotenv express fs path process``
+
+To start the server simply type this command:
+
+``node .``
+
+and your newly created server will be hosted at ``127.0.0.1:3000`` or ``localhost:3000``
+
+if the port is occupied for some reason modify ``index.js`` and enter your desired port.
+
 ### Le Credits
 
-You can host it yourself and try it or try our prebuilt and more secure one here: https://api.mrdiscord.repl.co/webhooks.html
+You can host it yourself and try it or try our prebuilt and more secure one here: https://api.mrdiscord.repl.co/webhooks.html (Dead Website)
 
 Built by [Mr Discreet Animation#8833](https://discord.com/users/696558802492719145) Discord Server: https://discord.com/invite/HxZzesDCbN
