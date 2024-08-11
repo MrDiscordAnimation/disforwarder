@@ -63,13 +63,21 @@ and then run:
 
 ``npm i axios cors dotenv express fs path process``
 
+Before starting the server please make sure the configuration in .env is correct
+And if the config in the .env is matched to your desired setting.
+Make sure to create /ws/ folder or whatever folder that you put in the ws_folder.
+
 To start the server simply type this command:
 
 ``node .``
 
 and your newly created server will be hosted at ``127.0.0.1:3000`` or ``localhost:3000``
 
-if the port is occupied for some reason modify ``index.js`` and enter your desired port.
+if the port is occupied for some reason modify ``index.js`` and ``.env`` to configure and enter your desired port.
+
+If you want only the barebones or the assets for the project check out ``barebones.js``
+
+Which will contains only the things you need to copy and paste into your project.
 
 ### Le Credits
 
